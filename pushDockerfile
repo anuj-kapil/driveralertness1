@@ -1,4 +1,6 @@
 FROM anujkapil/packratmanaged:1.1
 
+RUN install2.r remotes
+
 RUN installGithub.r anuj-kapil/driveralertness \
 && rm -rf /tmp/downloaded_packages/
