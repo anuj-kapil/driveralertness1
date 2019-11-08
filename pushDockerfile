@@ -1,5 +1,4 @@
 FROM anujkapil/packratmanaged:1.1
 
-RUN install2.r devtools
-
-RUN Rscript -e 'devtools::install_github("anuj-kapil/driveralertness")'
+RUN installGithub.r anuj-kapil/driveralertness \
+&& rm -rf /tmp/downloaded_packages/
