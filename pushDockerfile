@@ -1,0 +1,3 @@
+FROM anujkapil/packratmanaged:1.1
+
+RUN Rscript -e 'devtools::install_github("anuj-kapil/driveralertness")'
